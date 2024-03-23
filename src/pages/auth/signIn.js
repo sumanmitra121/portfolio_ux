@@ -4,6 +4,7 @@ import TDButton from '../../components/TDButton';
 import TDCheckbox from '../../components/TDCheckbox';
 import { Link } from 'react-router-dom';
 import axios from "axios";
+import { API } from '../../constants/api_name';
 const SignIn = () => {
   
    useEffect(() =>{
@@ -11,7 +12,7 @@ const SignIn = () => {
    },[])
 
    const fetchUser = () =>{
-        axios.get('http://127.0.0.1:8000').then(res =>{
+        axios.get(`http://127.0.0.1:8000/${API.USER}`).then(res =>{
               console.log(res.json())
         })
    } 
