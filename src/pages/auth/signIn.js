@@ -23,7 +23,7 @@ const SignIn = () => {
             flex flex-col w-3/5'>
         <TDInput
           label={"Email"}
-          placeholder={"Enter email"}
+          placeholder={"Enter Email"}
           desc={""}
         />
 
