@@ -13,7 +13,7 @@ const SignIn = () => {
 
    const fetchUser = () =>{
         axios.get(`http://127.0.0.1:8000/${API.USER}`).then(res =>{
-              console.log(res.json())
+              console.log(res)
         })
    } 
 
